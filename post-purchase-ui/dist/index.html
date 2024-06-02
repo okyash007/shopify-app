@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Purchase UI</title>
+    <script src="https://unpkg.com/@shopify/post-purchase-ui-extensions-react@latest/dist/umd/shopify-post-purchase-ui-extensions-react.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      const { render, Banner } = shopifyPostPurchaseExtensionsReact;
+
+      render("Checkout::PostPurchase::Render", () => {
+        return <Banner title="Thank you for your purchase!" />;
+      });
+    </script>
+  </body>
+</html>
